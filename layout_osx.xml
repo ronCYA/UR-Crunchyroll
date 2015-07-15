@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout scroll="none" light="normal:#f78c25;focus:#ff7d00;active:#ff7d00;color:#000000" dark="normal:#f78c25;focus:#ff7d00;active:#ff7d00;color:#000000" onlaunch="easter">
+	<row>
+		<button icon="vdown" ontap="volume_down" />
+		<button icon="vmute" ontap="volume_mute" />
+		<button icon="vup" ontap="volume_up" />
+	</row>
+	<row>
+		<button icon="rwd" ontap="rewind" />
+		<button icon="playpause" ontap="play_pause" />
+		<button icon="ff" ontap="forward" />
+	</row>
+	<row>
+		<button weight="2" icon="previous" ontap="video_beginning" />
+		<button weight="1" icon="back" ontap="exit_fullscreen" />
+		<button weight="1" icon="fullscreen" ontap="enter_fullscreen" />
+		<button weight="2" icon="next" ontap="video_end" />
+	</row>
+	<row>
+		<button text="Video Smoothing" ontap="toggle_smoothing" />
+		<toggle id="logo" light="normal:transparent;focus:transparent;active:transparent;color:transparent" image="logo0.png" checked="false" onchange="logo_toggle" onhold="logo_rotate" />
+		<button text="Timestamp Format" ontap="toggle_timestamp" />
+	</row>
+</layout>
